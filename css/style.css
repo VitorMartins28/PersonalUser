@@ -124,3 +124,55 @@ body {
         opacity: 0;
     }
 }
+
+.anime {
+    margin-top: 5rem;
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .3s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.fundo-jum {
+    background-image: linear-gradient(to bottom right, #0c4961, #6accc4);
+}
+
+.squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.20);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-800px) rotate(960deg);
+    }
+}
+
+div .photo-info img {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 56px -33px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 56px -33px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 56px -33px rgba(0, 0, 0, 0.75);
+}
